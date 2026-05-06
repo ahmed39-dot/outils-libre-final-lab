@@ -1,6 +1,7 @@
 package com.example.pricing;
 
 public class Main {
+
     public static void main(String[] args) {
 
         Order order = new Order(
@@ -12,6 +13,6 @@ public class Main {
 
         double result = engine.calculate(order, "VIP", "SAVE10");
 
-        System.out.println("Final Price: " + result);
+        System.out.printf("Final Price: %.2f%n", result);
     }
 }

@@ -2,8 +2,13 @@ package com.example.pricing;
 
 public class PricingEngine {
 
-    private DiscountService discountService = new DiscountService();
-    private TaxService taxService = new TaxService();
+    private DiscountService discountService;
+    private TaxService taxService;
+
+    public PricingEngine() {
+        discountService = new DiscountService();
+        taxService = new TaxService();
+    }
 
     public double calculate(Order order, String customerType, String discountCode) {
 
