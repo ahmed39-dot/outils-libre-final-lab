@@ -1,32 +1,37 @@
-# 💰 Pricing Engine - Refactoring Lab
+# Pricing & Discount Engine
 
-## 📌 Project Description
-This project is a refactored pricing engine that calculates the final price of an order using:
-- Discount strategies (SAVE10, SAVE20, VIP)
-- Tax calculation (19%)
-- Clean architecture using Strategy Design Pattern
+##  Project Overview
+This project is a Java-based pricing engine developed as part of a refactoring and software engineering lab.
 
----
+The system calculates:
+- Subtotal
+- Discounts
+- Taxes
+- Final price
 
-## 🧠 Features
-- Subtotal calculation
-- Flexible discount system (Strategy Pattern)
-- Tax service (19%)
-- Unit tests (console-based)
-- Clean OOP design
+##  Features
+- OOP Design
+- Strategy Pattern
+- Refactored clean code
+- Discount system
+- Tax calculation
+- Git/GitHub workflow
 
----
+##  Technologies
+- Java
+- Git & GitHub
+- PowerShell
 
-## 🏗️ Architecture
+##  Project Structure
+src/main/java/com/example/pricing
 
-The project follows **Strategy Design Pattern**:
+## Implemented Discounts
+- SAVE10
+- SAVE20
+- VIP Discount
 
-- `DiscountStrategy` → Interface
-- `Save10`, `Save20`, `VipDiscount`, `NoDiscount` → Implementations
-- `PricingEngine` → Core logic
-- `Order` → Data model
-- `TaxService` → Tax calculation
+## ▶️ Run Project
 
----
-
-## 📁 Project Structure
+Compile:
+```bash
+javac -d out src/main/java/com/example/pricing/*.java
